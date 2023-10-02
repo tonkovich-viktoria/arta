@@ -1,0 +1,268 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*****************************************************************/
+p {
+  margin: 0;
+}
+
+body {
+  background-image: url(images/g.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  height: 100svh;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+  min-height: fill-available;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  body {
+    background-image: url(images/bg@2x.png);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3),
+(min-resolution: 288dpi) {
+  .element {
+    background-image: url(images/bg@3x.png);
+  }
+}
+
+.main-title {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0px 48px rgba(4, 3, 26, 0.83);
+  font-size: 42px;
+  font-weight: 860;
+  line-height: 46px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  margin: 40.7px 0 49.7px;
+}
+
+.item {
+  position: relative;
+}
+
+.item-text {
+  position: absolute;
+  color: #fff;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  bottom: 10.8px;
+  left: 7.2px
+}
+
+.plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 24px;
+}
+
+.plan {
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(5.436563491821289px);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 65px 0 24px;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  height: 56px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.input-plan {
+  display: none;
+}
+
+.input-plan:checked+label {
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.30);
+}
+
+.plan-header {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.plan-title {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.plan-desc {
+  text-transform: initial;
+  font-weight: 400;
+  display: block;
+  opacity: 0.7;
+  margin-top: 2px;
+}
+
+.plan-price {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.7;
+}
+
+.plan:first-child {
+  position: relative;
+  
+}
+#annualOfferWeeklyPayment {
+  margin-top: 3px;
+}
+
+
+.badge {
+  position: absolute;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.50);
+  padding: 2px 23px 3px 22px;
+  right: 24px;
+  top: -10px;
+
+}
+
+.badge-text {
+  color: #141131;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.button {
+  border-radius: 32px;
+  background: #FFF;
+  color: #070B33;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 590;
+  line-height: 24px;
+  border: 0;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+  padding: 16px 0;
+  margin: 16px 24px 0 24px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 63px 0 65px;
+  bottom: env(safe-area-inset-bottom);
+  margin-top: 44px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.50);
+  text-align: center;
+  font-size: 12.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.577px;
+  text-decoration: none;
+}
+
+.icon-cross {
+  position: absolute;
+  top: 28px;
+  left: 24px;
+}
+
+.footer.lang-de,
+.footer.lang-fr {
+  padding: 0 24px;
+}
+
+.footer.lang-de a,
+.footer.lang-es a,
+.footer.lang-fr a,
+.footer.lang-pt a {
+  font-size: 10px;
+}
+
+.footer.lang-ja a {
+  font-size: 11px;
+}
+
+.plan.lang-de .plan-header,
+.plan.lang-es .plan-header,
+.plan.lang-fr .plan-header,
+.plan.lang-pt .plan-header,
+.plan.lang-de .plan-price {
+  font-size: 14px;
+}
+
+.plan.lang-de,
+.plan.lang-fr,
+.plan.lang-pt {
+  padding: 0 36px 0 24px;
+}
+
+.footer.lang-es,
+.footer.lang-pt {
+  padding: 0 50px;
+}
+
+/* iphone 6+, 6s+, 7+, 8+, 6, 6s, 7,8 */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3)
+{
+  .container {
+    margin: 40px 0 40.4px;
+  }
+
+  .button {
+    margin-top: 8px;
+  }
+
+  .footer {
+    padding: 0 56px 11px 57px;
+    margin-top: 28px;
+  }
+
+  .plan {
+    padding: 8px 63px 8px 24px;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .container {
+    margin: 20px 0;
+  }
+  .icon-cross {
+    top: 14px;
+}
+}
+@media screen and (min-width: 480px) {
+  body {
+      display: none;
+  }
+}
+
