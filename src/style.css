@@ -44,7 +44,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 24px;
-  margin: 40.7px 0 49.7px;
+  margin: 4.822vh 0 5.889vh;
 }
 
 .item {
@@ -123,8 +123,9 @@ body {
 
 .plan:first-child {
   position: relative;
-  
+
 }
+
 #annualOfferWeeklyPayment {
   margin-top: 3px;
 }
@@ -164,15 +165,14 @@ body {
   width: -moz-available;
   width: fill-available;
   padding: 16px 0;
-  margin: 16px 24px 0 24px;
+  margin: 1.896vh 24px 0 24px;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 63px 0 65px;
-  bottom: env(safe-area-inset-bottom);
-  margin-top: 44px;
+  padding: 0 63px 4.384vh 65px;
+  margin-top: 5.213vh;
   width: 100%;
   box-sizing: border-box;
 }
@@ -190,13 +190,18 @@ body {
 
 .icon-cross {
   position: absolute;
-  top: 28px;
+  top: 8.531vh;
   left: 24px;
 }
 
 .footer.lang-de,
 .footer.lang-fr {
-  padding: 0 24px;
+  padding: 0 24px 4.384vh;
+}
+
+.footer.lang-es,
+.footer.lang-pt {
+  padding: 0 50px 4.384vh;
 }
 
 .footer.lang-de a,
@@ -224,18 +229,9 @@ body {
   padding: 0 36px 0 24px;
 }
 
-.footer.lang-es,
-.footer.lang-pt {
-  padding: 0 50px;
-}
-
-/* iphone 6+, 6s+, 7+, 8+, 6, 6s, 7,8 */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3),
-{
-  
-
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
   .container {
-    margin: 40px 0 40.4px;
+    margin: 4.739vh 0 4.787vh;
   }
 
   .button {
@@ -243,24 +239,56 @@ body {
   }
 
   .footer {
-    padding: 0 56px 11px 57px;
+    padding: 0 56px 1.649vh 57px;
     margin-top: 28px;
+  }
+
+  .footer.lang-de,
+  .footer.lang-fr {
+    padding: 0 24px 1.649vh;
+  }
+
+  .footer.lang-es,
+  .footer.lang-pt {
+    padding: 0 50px 1.649vh;
   }
 
   .plan {
     padding: 8px 63px 8px 24px;
   }
+  
+  .icon-cross {
+    top: 4.384vh;
+  }
 }
+
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
   .container {
-    margin: 20px 0;
+    margin: 2.37vh 0;
   }
+
   .icon-cross {
-    top: 14px;
+    top: 4.384vh;
+  }
+
+  .footer {
+    padding: 0 56px 1.303vh 57px;
+    margin-top: 3.318vh;
+  }
+
+  .footer.lang-de,
+  .footer.lang-fr {
+    padding: 0 24px 1.649vh;
+  }
+
+  .footer.lang-es,
+  .footer.lang-pt {
+    padding: 0 50px 1.649vh;
+  }
 }
-}
+
 @media screen and (min-width: 480px) {
   body {
-      display: none;
+    display: none;
   }
 }
