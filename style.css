@@ -18,6 +18,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding: 0 24px 3.673vh;
+  box-sizing: border-box;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
@@ -45,13 +47,19 @@ body {
 
 .container {
   display: flex;
-  justify-content: space-between;
-  padding: 0 24px;
+  gap: 14px;
   margin: 4.822vh 0 5.889vh;
 }
 
 .item {
   position: relative;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+
+.item-image {
+  width: 100%;
 }
 
 .item-text {
@@ -69,7 +77,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 0 24px;
 }
 
 .plan {
@@ -130,7 +137,7 @@ body {
 }
 
 #annualOfferWeeklyPayment {
-  margin-top: 3px;
+  margin-top: 5px;
 }
 
 
@@ -139,9 +146,9 @@ body {
   border-radius: 10px;
   background: #FFF;
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.50);
-  padding: 2px 23px 3px 22px;
+  padding: 2px 22px 3px 23px;
   right: 24px;
-  top: -10px;
+  bottom: calc(100% - 10px);
 
 }
 
@@ -168,14 +175,14 @@ body {
   width: -moz-available;
   width: fill-available;
   padding: 16px 0;
-  margin: 1.896vh 24px 0 24px;
+  margin-top: 16px;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 63px 4.384vh 65px;
   margin-top: 5.213vh;
+  padding: 0 39px 0 41px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -193,23 +200,31 @@ body {
 
 .icon-cross {
   position: absolute;
-  top: 8.531vh;
+  top: 8.412vh;
   left: 24px;
+}
+
+.item-text.lang-fr {
+  font-size: 10px;
 }
 
 .footer.lang-de,
 .footer.lang-fr {
-  padding: 0 24px 4.384vh;
+  padding: 0 10px;
+}
+
+.footer.lang-de a,
+.footer.lang-fr a {
+  font-size: 9px;
 }
 
 .footer.lang-es,
 .footer.lang-pt {
-  padding: 0 50px 4.384vh;
+  padding: 0 20px;
 }
 
-.footer.lang-de a,
+
 .footer.lang-es a,
-.footer.lang-fr a,
 .footer.lang-pt a {
   font-size: 10px;
 }
@@ -232,9 +247,16 @@ body {
   padding: 0 36px 0 24px;
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+/* iphone se */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2),
+only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+  .icon-cross {
+    top: 5.547vh;
+  }
+
   .container {
-    margin: 4.739vh 0 4.787vh;
+    gap: 7px;
+    margin: 5.997vh 0 6.057vh;
   }
 
   .button {
@@ -242,51 +264,54 @@ body {
   }
 
   .footer {
-    padding: 0 56px 1.649vh 57px;
-    margin-top: 28px;
+    margin-top: 4.198vh;
+    padding: 0 32px 0 33px;
   }
 
-  .footer.lang-de,
-  .footer.lang-fr {
+  body {
     padding: 0 24px 1.649vh;
   }
 
-  .footer.lang-es,
-  .footer.lang-pt {
-    padding: 0 50px 1.649vh;
+  .footer.lang-de a,
+  .footer.lang-fr a {
+    font-size: 8px;
   }
 
-  .plan {
-    padding: 8px 63px 8px 24px;
+  .main-title.lang-fr,
+  .main-title.lang-de {
+    font-size: 32px;
+    line-height: 36px;
   }
-  
-  .icon-cross {
-    top: 4.384vh;
+
+  .main-title.lang-de,
+  .main-title.lang-pt {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .main-title.lang-ja {
+    font-size: 40px;
+    line-height: 42px;
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-  .container {
-    margin: 2.37vh 0;
+/* iphone 11 pro */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+
+  .footer.lang-de a,
+  .footer.lang-fr a {
+    font-size: 8px;
   }
 
-  .icon-cross {
-    top: 4.384vh;
+  .main-title.lang-fr {
+    font-size: 32px;
+    line-height: 36px;
   }
 
-  .footer {
-    padding: 0 56px 1.303vh 57px;
-    margin-top: 3.318vh;
-  }
-
-  .footer.lang-de,
-  .footer.lang-fr {
-    padding: 0 24px 1.649vh;
-  }
-
-  .footer.lang-es,
-  .footer.lang-pt {
-    padding: 0 50px 1.649vh;
+  .main-title.lang-de,
+  .main-title.lang-pt {
+    font-size: 38px;
+    line-height: 36px;
   }
 }
 
